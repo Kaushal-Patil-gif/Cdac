@@ -52,5 +52,68 @@ g) Search for all files with the extension ".txt" in the current directory and i
 --->
 
 find . -type f -name "*.txt"       \\Finds type of files with extension .txt in all directories
+grep "is" -n file1.txt             \\Displays lines with line numbers containing "is" word in file1.txt
 
+
+h) Display the current system date and time.
+--->
+
+date
+
+
+i) Display IP address of the system. Ping a remote server to check connectivity.
+--->
+
+ip addr                             \\Displays IP address of the system
+ping 192.168.1.1                    \\Checks connectivity in ms for 192.168.1.1
+
+
+j) Compress the "docs" directory into a zip file. Extract the contents of the zip file into a new directory.
+--->
+
+sudo apt install zip                 \\Installs Zip in shell
+zip -r zipfile.zip docs              \\Creates zipfile.zip containing compressed docs
+mkdir docs2                          \\Creates docs2 directory
+unzip -d docs2 zipfile.zip           \\Unzips created zipfile into docs2 which includes docs
+
+
+k) Open file1.txt in text editor and add some text to it. Replace a specific word in file1.txt with another word.
+--->
+
+vi file1.txt                          \\Opens file1.txt in VI editor
+                                      \\Press Esc and I to insert data
+                                      \\Press Esc after adding data and type :wq to save and exit
+sed -i 's/is/was/g' file1.txt         \\Stream editor in place using substitute command replaces is to was globally in file1.txt
+
+
+
+Problem 2:
+a) Suppose you have a file named data.txt containing important information. Display the first 10 lines of the file to quickly glance at its contents using a command.
+--->
+
+touch data.txt                        \\Creating data.txt
+cat > data.txt                        \\Adding important information
+head data.txt                         \\Displays first 10 lines of data.txt
+
+
+b) Now, to check the end of the file for any recent additions, display the last 5 lines of data.txt using another command.
+--->
+
+tail -5 data.txt                      \\Displays last 5 lines of data.txt
+
+
+c) In a file named numbers.txt, there are series of numbers. Display the first 15 lines of this file to analyze the initial data set.
+--->
+
+head -15 numbers.txt                  \\Displays first 15 lines of numbers.txt
+
+
+d) To focus on the last few numbers of the dataset, display last 3 lines of numbers.txt
+--->
+
+tail -3 numbers.txt                   \\Displays last 3 lines of numbers.txt
+
+
+e) Imagine you have a file named input.txt with text content. Use a command to translate all lowercase letters to uppercase in input.txt and save the modified text in a new file named output.txt
+--->
 
