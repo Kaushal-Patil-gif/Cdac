@@ -132,6 +132,6 @@ uniq -u duplicate.txt                  \\uniq will only work when duplicate cont
 g) In a file named fruit.txt, there is a list of fruits, but some fruits are repeated. Use a command to display each unique fruit along with the count of its occurences in fruit.txt.
 --->
 
-uniq -u -c file1.txt                   \\Displays unique fruit along with count 
+uniq -u -c fruit.txt                   \\Displays unique fruit along with count 
 
 
