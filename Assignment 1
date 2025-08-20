@@ -1,4 +1,6 @@
 Problem 1:
+----------
+
 a) Start by navigating to your home directory and list its contents. Then, move into a directory named "LinuxAssignment" if it exists; otherwise, create it.
 --->
 
@@ -88,6 +90,8 @@ sed -i 's/is/was/g' file1.txt         \\Stream editor in place using substitute 
 
 
 Problem 2:
+----------
+
 a) Suppose you have a file named data.txt containing important information. Display the first 10 lines of the file to quickly glance at its contents using a command.
 --->
 
