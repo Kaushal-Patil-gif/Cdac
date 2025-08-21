@@ -31,4 +31,22 @@ h) chmod 755 script.sh
 i) grep "pattern" file.txt
 -> Searches and prints "pattern" word from file.txt
 
-j)
+j) kill PID
+-> Use to kill process through PID
+
+k) mkdir mydir && cd mydir && touch file.txt && echo "Hello, World!" > file.txt && cat file.txt
+-> Creaates mydir directory. Navigates to mydir. Creates file.txt in mydir. Prints Hello, World! in file.txt, Opens file.txt
+
+l) ls -l | grep ".txt"
+-> Searches .txt files in directory and also shows it's owner and permissions.
+
+m) cat file1.txt file2.txt | sort | uniq
+-> Opens file1.txt and file2.txt and also sort them for only unique entries.
+
+n) ls -l | grep "^d"
+-> Searches for only directory and prints them with permissions. 
+
+o) grep -r "pattern" /path/to/directory/
+-> Searches for recursive word pattern in particular directory.
+
+p) cat 
