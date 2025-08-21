@@ -1,1 +1,34 @@
+Part A
+------
 
+***What will the following commands do?***
+
+a) echo "Hello,World!"
+-> Output:
+Hello,World!
+
+b) name="Productive"
+-> Creates variable "name" and adds "Productive" as value.
+
+c) touch file.txt
+-> Creates file.txt file
+
+d) ls -a
+-> List all files including hidden ones
+
+e) rm file.txt
+-> Deletes file.txt file
+
+f) cp file1.txt file2.txt
+-> Creates file2.txt if not exists and copies data from file1.txt into file2.txt. If file2.txt exists, it will overwrite the data in file2.txt
+
+g) mv file.txt /path/to/directory/
+-> Moves file.txt to particular path or destination.
+
+h) chmod 755 script.sh
+-> Changes permissions for script.sh, 7 gives owner permissions to read, write and execute.5 gives group and other user permissions to only read and execute.
+
+i) grep "pattern" file.txt
+-> Searches and prints "pattern" word from file.txt
+
+j)
