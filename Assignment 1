@@ -60,7 +60,7 @@ grep "is" -n file1.txt             \\Displays lines with line numbers containing
 h) Display the current system date and time.
 --->
 
-date
+date                                \\Display date and time
 
 
 i) Display IP address of the system. Ping a remote server to check connectivity.
