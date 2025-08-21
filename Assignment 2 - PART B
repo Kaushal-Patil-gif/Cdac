@@ -1,0 +1,57 @@
+PART B
+------
+
+***Identify True or False:***
+
+1. ls is used to list files and directories in a directory.
+-> True
+
+2. mv is used to move files and directories.
+-> True
+
+3. cd is used to copy files and directories.
+-> False, cp is used
+
+4. pwd stands for "Print working directory" and displays the current directory.
+-> True
+
+5. grep is used to search for patterns in files.
+-> True
+
+6. chmod 755 file.txt gives read, write, and execute permissions to the owner, and read and execute permissions to group and others.
+-> True, 1 = execute, 4 = read, 2 = write
+
+7. mkdir -p directory1/directory2 creates nested directories, creating directory2 inside directory1 if directory1 does not exist.
+-> True, -p make parent directories if needed
+
+8. rm -rf file.txt deletes a file forcefully without confirmation.
+-> True, -r removes subdirectories and -f forces it without any prompts
+
+***Identify the Incorrect Commands:***
+
+1. chmodx is used to change file permissions.
+-> Incorrect, chmod is used
+
+2. cpy is used to copy files and directories.
+-> Incorrect, cp is used
+
+3. mkfile is used to create a new file.
+-> Incorrect, touch file is used
+
+4. catx is used to concatenate files.
+-> Incorrect, cat file1.txt file2.txt is used
+
+5. rn is used to rename files.
+-> Incorrect, mv filename.txt newfilename.txt is used
+
+
+
+
+
+
+
+
+
+
+
+
