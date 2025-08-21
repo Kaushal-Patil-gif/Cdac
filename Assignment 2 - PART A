@@ -47,6 +47,22 @@ n) ls -l | grep "^d"
 -> Searches for only directory and prints them with permissions. 
 
 o) grep -r "pattern" /path/to/directory/
--> Searches for recursive word pattern in particular directory.
+-> Searches for pattern in particular directory and its subdirectories.
 
-p) cat 
+p) cat file1.txt file2.txt | sort | uniq
+-> Opens, sorts and prints only duplicate lines from file1.txt and file2.txt
+
+q) chmod 644 file.txt
+-> Set permissions as read, write for owner and only read for other users and group for file.txt
+
+r) cp -r source_directory destination_directory
+-> Copies a directory completely including subdirectories to destination directory.
+
+s) find /path/to/search -name "*.txt"
+-> Searches for .txt extension files in particular path
+
+t) chmod u+x file.txt
+-> Gives owner permission to execute in file.txt
+
+u) echo $PATH
+-> Prints all executable file paths.
