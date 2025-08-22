@@ -1,0 +1,132 @@
+1. Write a shell script that prints "Hello, World!" to the terminal.
+->
+  vi s1.sh
+  -----
+  #!/bin/bash
+  echo "Hello, World!"
+  -----
+  bash s1.sh
+
+2. Declare a variable nameed "name" and assign the value "CDAC Mumbai" to it. Print the value of the variable.
+->
+  vi s2.sh
+  -----
+  #!/bin/bash
+  name="CDAC Mumbai"                            \\remember not to give space after name. It will consider it a command instead of var
+  echo "Value of variable name is $name"
+  -----
+  bash s2.sh
+
+3. Write a shell script that takes a number as inout from the user and prints it.
+->
+  vi s3.sh
+  -----
+  #!/bin/bash
+  echo "Enter a number"
+  read num
+  echo "Your number is: $num"
+  -----
+  bash s3.sh
+
+4. Write a shell script that performs addition of two number (e.g., 5 and 3) and prints the result.
+->
+  vi s4.sh
+  -----
+  #!/bin//bash
+  num1="5" num2="3"
+  result=$((num1 + num2))
+  echo "Addition of $num1 and $num2 is $result"
+  -----
+  bash s4.sh
+
+5. Write a shell script that takes a number as input and prints "Even" if it is even, otherwise prints "Odd".
+->
+  vi s5.sh
+  ------
+  #!/bin/bash
+  echo "Enter a number"
+  read num
+  if [ $(( num % 2 )) -eq 0 ]; then
+    echo "Number is Even"
+  else
+    echo "Number is Odd"
+  fi
+  -----
+  bash s5.sh
+
+6. Write a shell script that uses a for loop to print numbers from 1 to 5.
+->
+  vi s6.sh
+  -----
+  #!/bin/bash
+  for num in 1 2 3 4 5 
+  do
+    echo "$num"
+  done
+  -----
+  bash s6.sh
+
+7.  Write a shell script that uses a while loop to print numbers from 1 to 5.
+-> 
+  vi s7.sh
+  -----
+  #!/bin/bash
+  num= "1"
+  while [ $num -le 5 ];
+  do
+    echo "$num"
+    ((num++))
+  done
+  -----
+  bash s7.sh
+
+8. Write a shell script that checks if a file named "file.txt" exists in the current directory. If it 
+does, print "File exists", otherwise, print "File does not exist". 
+->
+  vi s8.sh
+  -----
+  #!/bin/bash
+  if [ -e file.txt ]; then
+    echo "File exists"
+  else
+    echo "File does not exist"
+  fi
+  -----  
+  bash s8.sh
+
+9. Write a shell script that uses the if statement to check if a number is greater than 10 and 
+prints a message accordingly. 
+->
+  vi s9.sh
+  -----
+  #!/bin/bash
+  echo "Enter a number"
+  read num
+  if [ $num -gt 10 ]; then
+    echo "$num is greater than 10"
+  else
+    echo "$num is less than 10"
+  fi
+  -----
+  bash s9.sh
+  
+10. Write a shell script that uses nested for loops to print a multiplication table for numbers 
+from 1 to 5. The output should be formatted nicely, with each row representing a number and each 
+column representing the multiplication result for that number. 
+->
+  vi s10.sh
+  -----
+  #!/bin/bash
+  for i in {1..10}
+  do 
+    for j in {1..5}
+      do 
+      result=$((i * j))
+      echo -n " $result"
+    done
+  echo
+  done
+  -----
+  bash s10.sh
+
+  
