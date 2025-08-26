@@ -129,4 +129,20 @@ column representing the multiplication result for that number.
   -----
   bash s10.sh
 
-  
+  11. Write a shell script that uses a while loop to read numbers from the user until the user enters a negative number. For each positive number entered, print its square. Use the break statement to exit the loop when a negative number is entered.
+->
+  vi s11.sh
+  #!/bin/bash
+  while true
+  do
+  echo "Enter a positive number (or a negative number to exit): "
+  read number
+  if [ "$number -lt 0 ]
+  then
+    echo "Negative number entered.Thank you.."
+    break
+  fi
+  square=$((number * number))
+  echo "The sqaure of $number is: $square"
+  done  
+  echo "Script finished. "
